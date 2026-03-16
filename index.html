@@ -14,39 +14,34 @@ sauerkraut: 1
 };
  //displays hotdog,fries,soda,sauerkraut    
 document.write(Object.keys(Joes));
-//document.write("<br>");   
+document.write("<br>");   
 //Output:  Menu: Joe's hotdog $4 - Menu: Joe's fries $3.5 - Menu: Joe's soda $1.5 - Menu: Joe's sauerkraut $1 - 
-//for (const key in Joes) { document.write("Menu: Joe's " + key + " $" + Joes[key] + " - ");}   
+for (const key in Joes) { document.write("Menu: Joe's " + key + " $" + Joes[key] + " - ");}   
     
 document.write("<br>");
- const item1 = {name: 'hotdog', price: 4};
- const item2 = {name: 'fries', price: 3.50};
- const item3 = {name: 'soda', price: 1.50};
- const item4 = {name: 'sauerkraut', price: 1};
-//output:  Menu: Joe's hotdog $4Menu: Joe's fries $3.5Menu: Joe's soda $1.5Menu: Joe's sauerkraut $1 
- function displayMenuItem(item) {
-    return "Menu: Joe's " + item.name + " $" + item.price;
- }
- document.write(displayMenuItem(item1)); //Output: Menu: Joe's hotdog $4
- document.write(displayMenuItem(item2)); //Output: Menu: Joe's fries $3.50
- document.write(displayMenuItem(item3)); //Output: Menu: Joe's soda $1.50
- document.write(displayMenuItem(item4)); //Output: Menu: Joe's sauerkraut $1
-    document.write("<br>");
+// const item1 = {name: 'hotdog', price: 4};
+ //const item2 = {name: 'fries', price: 3.50};
+ //const item3 = {name: 'soda', price: 1.50};
+ //const item4 = {name: 'sauerkraut', price: 1};
+ //output:  Menu: Joe's hotdog $4Menu: Joe's fries $3.5Menu: Joe's soda $1.5Menu: Joe's sauerkraut $1 
+ function displayMenuItem(item) { return "Menu: Joe's " + item.name + " $" + item.price;};
+ //document.write(displayMenuItem(item1)); //Output: Menu: Joe's hotdog $4
+ //document.write(displayMenuItem(item2)); //Output: Menu: Joe's fries $3.50
+ //document.write(displayMenuItem(item3)); //Output: Menu: Joe's soda $1.50
+ //document.write(displayMenuItem(item4)); //Output: Menu: Joe's sauerkraut $1
+document.write("<br>");
 
-const Joes = [];
-Joes["hotdog"] = 4; //hotdog is the key, 4 is the value
-Joes["fries"] = 3.50 ;//fries is the key, 3.50 is the value
-Joes["soda"] = 1.50 ;//soda is the key, 1.50 is the value
-Joes["sauerkraut"] = 1; //sauerkraut is the key, 1 is the value
+//const Joes = [];
+//Joes["hotdog"] = 4; //hotdog is the key, 4 is the value
+//Joes["fries"] = 3.50 ;//fries is the key, 3.50 is the value
+//Joes["soda"] = 1.50 ;//soda is the key, 1.50 is the value
+//Joes["sauerkraut"] = 1; //sauerkraut is the key, 1 is the value
 //Output:  Menu: Joe's hotdog $4 - Menu: Joe's fries $3.5 - Menu: Joe's soda $1.5 - Menu: Joe's sauerkraut $1 - 
-for (key in Joes){
-document.write("Menu: Joe's " + key + " $" + Joes[key] + " - ")};
-document.write("<br>");   
+//for (key in Joes){ document.write("Menu: Joe's " + key + " $" + Joes[key] + " - ")};
+//document.write("<br>");   
 document.write(Joes["fries"]); //displays 3.50
     
 </script>
-<div id="menu"></div>
-
 </body>
 
 
