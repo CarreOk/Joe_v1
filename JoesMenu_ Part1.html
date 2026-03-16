@@ -5,15 +5,15 @@
 </head>
 <body>
 <script>
-Joes = [];
+const Joes = [];
 Joes["hotdog"] = 4; //hotdog is the key, 4 is the value
 Joes["fries"] = 3.50 ;//fries is the key, 3.50 is the value
 Joes["soda"] = 1.50 ;//soda is the key, 1.50 is the value
 Joes["sauerkraut"] = 1; //sauerkraut is the key, 1 is the value
-document.write(Joes["fries"]); //displays 3.50
-for (key in Joes);
-document.write("Menu: Joe's " + key + " $" + Joes[key] + " - ");
 //Output: hotdog $4 - fries $3.50 - soda $1.50 - sauerkraut $1
+for (key in Joes){
+document.write("Menu: Joe's " + key + " $" + Joes[key] + " - ")};
+document.write(Joes["fries"]); //displays 3.50
 </script>
 <div id="menu"></div>
 
